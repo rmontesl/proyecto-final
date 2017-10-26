@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kama | Escapa de la rutina</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kama | Escapa de la rutina" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Raul Montes" />
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108071005-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108071005-1');
+</script>
+
+  
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Date Picker -->
+	
+	<!-- CS Select -->
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link href="dist/css/datepicker.css" rel="stylesheet">
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="dist/js/datepicker.js"></script>
+<script>
+	$('#minMaxExample').datepicker({
+    language: 'es',
+    minDate: new Date() // Now can select only dates, which goes after today
+})
+	var disabledDays = [0, 6];
+
+$('#disabled-days').datepicker({
+    language: 'en',
+    onRenderCell: function (date, cellType) {
+        if (cellType == 'day') {
+            var day = date.getDay(),
+                isDisabled = disabledDays.indexOf(day) != -1;
+
+            return {
+                disabled: isDisabled
+            }
+        }
+    }
+})
+</script>
+
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+                    <a href="inicio.html"><img src="images/logo.png" class="brand" alt=""></a>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							
+							<li>
+								<a href="#nosotros" class="fh5co-sub-ddown">Nosotros</a>
+								
+							</li>
+							<li><a href="#moteles">Moteles</a></li>
+                            <li><a href="#promociones">Promociones</a></li>
+							<li><a href="#contacto">Contacto</a></li>
+							<li><a class="btn btn-primary btn-outline" href="contacto-moteles.html">¿Eres un Motel?</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- end:header-top -->
+	
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/hero.png);">
+				<div class="desc">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-5 col-md-5">
+								<div class="tabulation animate-box">
+
+								  <!--Nav tabs-->
+								  <!-- <ul class="nav nav-tabs" role="tablist">
+								      <li role="presentation" class="active">
+								      	<a href="#carpeba" aria-controls="carpeba" role="tab" data-toggle="tab">Carpe Diem</a>
+								      </li>
+								      <li role="presentation">
+								      	<a href="#ibiza" aria-controls="carpech" role="tab" data-toggle="tab">Ibiza</a>
+								      </li>
+								      <li role="presentation">
+								      	<a href="#carpegh" aria-controls="carpech" role="tab" data-toggle="tab">El Faro</a>
+								      </li>
+								      
+								      
+								   </ul>-->
+
+								   <!-- Tab panes -->
+								   
+								<div class="tab-content">
+										
+									<div role="tabpanel" class="tab-pane active" id="carpeba">
+										<div class="row">
+											<form action="reserva.php" method="post">
+											<div class="col-sm-12 mt"> <section>
+													<label for="motel">Elige el motel</label>
+													<select class="cs-select cs-skin-border" id="motel" name="motel" required onchange="cambia_habitación()">
+														<option value="0" selected>Selecciona una opción...</option>
+														<option value="Ibiza">Ibiza</option>
+														<option value="Carpe Diem Barrio Abajo">Carpe Diem Barrio Abajo</option>
+														<option value="Carpe Diem Chiquinquira">Carpe Diem Chiquinquira</option>
+														<option value="El Faro">El Faro</option>
+														<option value="El Faraón">El Faraón</option>
+														<option value="Maracaná">Maracaná</option>
+														<option value="Cesar's Palace">Cesar's Palace</option>
+													</select>
+												</section>
+</div><!--
+<div class="col-sm-12 mt"> <section>
+ <label for="habitacion">Elige el Habitacion :</label>
+ <select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required>
+    <option value="0" selected>Selecciona una opción...</option>
+ </select> 
+</div> -->
+											<div class="col-sm-12 mt">
+												<div class="input-field">
+													<label for="date-start">Elige la fecha y la hora</label>
+													<input type='text' class='datepicker-here form-control'
+2
+       data-language='es'
+       data-timepicker="true"
+3
+       data-position='right top'
+       placeholder="Seleccione una opción..." 
+4
+>
+
+												</div>
+											</div>
+											
+											<div class="col-sm-12 mt">
+												<section>
+													<label for="decoracion">¿Deseas decoración?</label>
+													<select class="cs-select cs-skin-border" id="decoracion" name="decoracion" required="">
+														<option value="0" selected>Selecciona una opción...</option>
+														<option value="Si" >Si</option>
+														<option value="No">No</option>
+														
+													</select>
+												</section>
+											</div>
+											<div class="col-sm-12 mt">
+												<div class="input-field">
+													<label for="mail">Correo Electrónico o Teléfono celular</label>
+													<input type="text" class="form-control" id="mail" name="mail" placeholder="Escribe una opción..." required="" />
+												</div>
+											</div>
+											<div class="col-md-12 mt">
+												<div class="input-field">
+													<h5 for="checkbox"><input type="checkbox" id="checkbox" name="checkbox" required="">
+											Aceptas nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a> y <a href="tratamiento-datos.html" target="_blank">Tratamiento de datos</a></h5>
+												</div>
+												<h5>* Solo podremos enviarte el código de reserva suministrando información veridica</h5>
+											</div>
+											
+											
+											
+											
+											<div class="col-xs-12">
+												<button type="submit" class="btn btn-primary btn-block">Enkámate</button>
+											</div>
+											</form>
+										</div>
+									 </div>
+
+									 
+
+									 
+									</div>
+
+								</div>
+							</div>
+							<div class="desc2 animate-box">
+								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
+									<h2>Escapa de la rutina y vive experiencias únicas</h2>
+									<h3>Conoce los mejores moteles de tu ciudad, su <br>ubicación y reserva, todo aquí.</h3>
+									<!-- <p><a class="btn btn-primary btn-lg" href="#">Get Started</a></p> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		</div>
+		
+		
+
+		<div id="fh5co-features">
+			<div class="container" id="nosotros">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Nosotros</h3>
+						<p class="justify">Somos un grupo emprendedor, que busca con esta grandiosa idea "Kama" crear un espacio especializado para moteles, todo a tu medida. Podrás encontrar, reservar y comparar diferentes opciones de moteles cerca de ti. Tambien te ofrecemos ofertas y promociones exclusivas para que disfrutes al máximo esos momentos especiales con tu pareja.
+Queremos ser una nueva alternativa, llena de innovación así que esperamos tus comentarios que nos ayudan a crecer.</p>
+<!--<a href="#">Conoce nuestra historia <i class="icon-arrow-right22"></i></a>-->
+					</div>
+				</div>
+
+					
+					
+				
+				
+			</div>
+		</div>
+		<div id="fh5co-tours" class="fh5co-section-gray">
+			<div class="container" id="moteles">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Moteles</h3>
+						<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>-->
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/ibiza.jpg" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Ibiza</h3>
+								<span>1,5 km vía Juan Mina</span>
+								<span class="price">Desde $48.000</span>
+								<a class="btn btn-primary btn-outline" href="ibiza.html">Ver más<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/faraon.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>El Faraón</h3>
+								<span>Cra 38 # 117 - 300</span>
+								<span class="price">Desde $52.000</span>
+								<a class="btn btn-primary btn-outline" href="faraon.html">Ver más<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/carpe.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Carpe Diem</h3>
+								<span>Cra 43 # 50 - 19</span>
+								<span class="price">Desde $53.000</span>
+								<a class="btn btn-primary btn-outline" href="carpe-diem-ba.html">Barrio Abajo<i class="icon-arrow-right22"></i></a><a class="btn btn-primary btn-outline" href="carpe-diem-ch.html">Chiquinquira<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/faro.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>El Faro</h3>
+								<span>Calle 79 # 75 - 342</span>
+								<span class="price">Desde $40.000</span>
+								<a class="btn btn-primary btn-outline" href="el-faro.html">Ver más<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/mara.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>El Maracaná</h3>
+								<span>Cra 54 # 43 - 85</span>
+								<span class="price">Desde $30.000</span>
+								<a class="btn btn-primary btn-outline" href="maracana.html">Ver más<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+						<div href="#"><img src="images/cesar.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+							<div class="desc">
+								<span></span>
+								<h3>Cesar's Palace</h3>
+								<span>Cra 38 # 80D - 106</span>
+								<span class="price">Desde $32.000</span>
+								<a class="btn btn-primary btn-outline" href="cesar-palace.html">Ver más<i class="icon-arrow-right22"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center animate-box">
+						<p><a class="btn btn-primary btn-outline btn-lg" href="contacto-moteles.html">¿Eres un motel? ¡Contáctanos!<i class="icon-arrow-right22"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-car" class="fh5co-section-white">
+			<div class="container" id="promociones">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Promociones</h3>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-6 col-md-offset-3 animate-box">
+						<div class="car">
+							<div class="one-4">
+								<h3>2x4</h3>
+								<span class="price"> En Carpe Diem Barrio Abajo en cualquier habitación<br><small>Solo días domingo</small></span>
+								<a class="btn btn-white btn-outline-white" href="reserva-carpe-diem.html">Reservar<i class="icon-arrow-right22"></i></a>
+							</div>
+							<div class="one-1" style="background-image: url(images/carpe.jpg);">
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-car" class="fh5co-section-white">
+			<div class="container" id="">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Aliados</h3>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12">
+						<img src="images/aliados.png" alt="" class="img-responsive">
+					</div>
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-contact" class="fh5co-section-gray">
+			<div class="container" id="contacto">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Contacto</h3>
+					</div>
+				</div>
+				<form action="#">
+					<div class="row animate-box">
+						<div class="col-md-6">
+							<h3 class="section-title">Información de contacto</h3>
+							
+							<ul class="contact-info">
+								<li><i class="icon-location-pin"></i>Barranquilla, Colombia</li>
+								<li><i class="icon-phone2"></i>+ 57 301 546 0909</li>
+								<li><i class="icon-mail"></i>info@kama.com.co</li>
+								<li><i class="icon-globe2"></i>www.kama.com.co</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Nombre">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="submit" value="Enviar" class="btn btn-primary">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+		
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icons">
+								
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+							</p>
+							<p>Copyright 2017 Kama. Todos los derechos reservados. <br>Hecho con <i class="icon-heart3"></i> por <a href="#" target="_blank">marca</a><br>
+								Nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="js/datepicker.min.js"></script>
+	<!-- CS Select -->
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+	
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	<script src="dist/js/i18n/datepicker.es.js"></script>
+	<script>
+$(document).on("change","#motel",function(){
+
+    var habitacionesIbiza = "<option value='0' selected>Selecciona una opción...</option><option value='1'>Sencilla</option><option value='2'>Doble</option>"
+    var habitacionesCarpe = "<option value='0' selected>Selecciona una opción...</option><option value='3'>Habitacion 1</option><option value='4'>Suite</option>"
+    var idMotel = $("#motel option:selected").val();
+
+    if(idMotel == "Ibiza")
+        $("#Habitacion").html(habitacionesIbiza);
+    else if(idMotel =="Carpe")
+        $("#Habitacion").html(habitacionesCarpe);
+});
+</script>
+	
+
+	</body>
+</html>
+
