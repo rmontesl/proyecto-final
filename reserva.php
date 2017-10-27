@@ -18,10 +18,14 @@ $mensaje .= "Hora: " . $hora . " \r\n";
 $mensaje .= "Decoración: " . $decoracion . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'kamabq@gmail.com';
+$para = 'raulmonteslizcano@gmail.com';
 $asunto = 'Nueva reserva Kama';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-echo 'Mensaje enviado correctamente <a href="http://kama.com.co">Volver al inicio</a>';
-?>
+echo "<fieldset>";
+	echo "<div id='success_page'>";
+	echo "<h2>¡Gracias por Utilizar Kama!</h2>";
+	echo "<p>De 30 a 40 minutos nos estaremos contactando contigo. Espera la confirmación de tu reserva y enkámate.</p>";
+	echo "</div>";
+	echo "</fieldset>";

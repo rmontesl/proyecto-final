@@ -39,6 +39,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 	
+	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -56,6 +57,8 @@
 	<link rel="stylesheet" href="css/cs-skin-border.css">
 	
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
 
 	<!-- Modernizr JS -->
@@ -64,6 +67,32 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<link href="dist/css/datepicker.css" rel="stylesheet">
+
+<script src="js/jquery.min.js"></script>
+
+<script src="dist/js/datepicker.js"></script>
+<script>
+	$('#minMaxExample').datepicker({
+    language: 'es',
+    minDate: new Date() // Now can select only dates, which goes after today
+})
+	var disabledDays = [0, 6];
+
+$('#disabled-days').datepicker({
+    language: 'en',
+    onRenderCell: function (date, cellType) {
+        if (cellType == 'day') {
+            var day = date.getDay(),
+                isDisabled = disabledDays.indexOf(day) != -1;
+
+            return {
+                disabled: isDisabled
+            }
+        }
+    }
+})
+</script>
 
 	</head>
 	<body>
@@ -145,16 +174,7 @@
 											<div class="col-sm-12 mt">
 												<div class="input-field">
 													<label for="date-start">Elige la fecha y la hora</label>
-													<input type='text' class='datepicker-here form-control'
-2
-       data-language='es'
-       data-timepicker="true"
-3
-       data-position='right top'
-       placeholder="Seleccione una opción..." 
-4
->
-
+													<input type='text' class='datepicker-here form-control' data-language='es' data-timepicker="true" data-position='right top' placeholder="Seleccione una opción...">
 												</div>
 											</div>
 											
@@ -175,12 +195,12 @@
 													<input type="text" class="form-control" id="mail" name="mail" placeholder="Escribe una opción..." required="" />
 												</div>
 											</div>
-											<div class="col-sm-12 mt">
+											<div class="col-md-12 mt">
 												<div class="input-field">
-													<label for="checkbox"><input type="checkbox" id="checkbox" name="checkbox" required="">
-											Aceptas nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a> y <a href="tratamiento-datos.html" target="_blank">Tratamiento de datos</a></label>
+													<h5 for="checkbox" class="form-info"><input type="checkbox" id="checkbox" name="checkbox" required="" class="form-info">
+											Aceptas nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a> y <a href="tratamiento-datos.html" target="_blank">Tratamiento de datos</a></h5>
 												</div>
-												<label>* Solo podremos enviarte el código de reserva suministrando información veridica</label>
+												<h5 class="form-info">* Solo podremos enviarte el código de reserva suministrando información veridica</h5>
 											</div>
 											
 											
@@ -228,7 +248,7 @@
 				<form action="#">
 					<div class="row animate-box">
 						<div class="col-md-5 col-md-offset-1">
-							<p class="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eius, debitis rem voluptatum ratione corporis quis eos delectus dolore facere, ex, quia. Suscipit, modi ad recusandae architecto quas. Fuga, odit.</p>
+							
 							
 							<ul class="contact-info">
 								<li><i class="icon-streetsign"></i>Calle 79 # 75 - 342</li>
@@ -247,6 +267,83 @@
 				</form>
 			</div>
 		</div>
+		<section id="pricing-table">
+            <div class="container">
+                <div class="row">
+                    <div class="pricing">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header">
+                                    <p class="pricing-title">Sencilla</p>
+                                    <p class="pricing-rate"><sup>$</sup>50<span>000</span></p>
+                                    
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        
+                                        <li>Hora adicional $16.000</li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header">
+                                    <p class="pricing-title">Cabaña</p>
+                                    <p class="pricing-rate"><sup>$</sup>60<span>000</span></p>
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        
+                                        <li>Hora adicional $20.000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header">
+                                    <p class="pricing-title">Especial</p>
+                                    <p class="pricing-rate"><sup>$</sup>65<span>000</span></p>
+                                    
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        
+                                        <li>Hora adicional $26.000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header">
+                                    <p class="pricing-title">Multiple</p>
+                                    <p class="pricing-rate"><sup>$</sup>150<span>000</span></p>
+                                    
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        
+                                        <li>Hora adicional $70.000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
 		<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 						<h3>Otros Moteles</h3>
@@ -456,7 +553,7 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Date Picker -->
-	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
 	<!-- CS Select -->
 	<script src="js/classie.js"></script>
 	<script src="js/selectFx.js"></script>
@@ -465,7 +562,7 @@
 	
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
-
+	<script src="dist/js/i18n/datepicker.es.js"></script>
 	</body>
 </html>
 
