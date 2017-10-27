@@ -129,7 +129,7 @@
 										
 									<div role="tabpanel" class="tab-pane active" id="carpeba">
 										<div class="row">
-											<form method="post">
+											<form action="reserva.php" method="post">
 											<div class="col-sm-12 mt"> <section>
    <label for="motel">Elige el motel</label>
    <select class="cs-select cs-skin-border" id="motel" name="motel" required>
@@ -160,7 +160,15 @@
 											<div class="col-sm-12 mt">
 												<div class="input-field">
 													<label for="date-start">Elige la fecha y la hora</label>
-													<input type='text' class='datepicker-here form-control' data-language='es' data-timepicker="true" data-position='right top' placeholder="Seleccione una opción...">
+<<<<<<< HEAD
+													<input type='text' id="minMaxExample" class=' form-control'
+       data-language='es'
+       data-timepicker="true"
+       data-position='right top'
+       placeholder="Seleccione una opción...">
+=======
+													<input type='text' id="#FechayHora" class='datepicker-here form-control' data-language='es' data-timepicker="true" data-position='right top' placeholder="Seleccione una opción...">
+>>>>>>> 365d96e6638f9ed364e3f6b8ef2c4fda56b5a7d2
 												</div>
 											</div>
 											
@@ -194,7 +202,7 @@
 											
 											
 											<div class="col-xs-12">
-												<button type="button" class="btn btn-primary btn-block" id="enviarForm">Enkámate</button>
+												<button type="submit" class="btn btn-primary btn-block">Enkámate</button>
 											</div>
 											</form>
 										</div>
