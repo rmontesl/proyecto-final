@@ -20,7 +20,7 @@ $(document).on("change","#motel",function(){
 
     if(idMotel == "Ibiza")
         $("#habitacion").html(Ibiza);
-    else if(idMotel =="Carpe Diem chiquinquira")
+    else if(idMotel =="Carpe Diem Chiquinquira")
         $("#habitacion").html(chiquinquira);
     else if(idMotel =="Carpe Diem Barrio Abajo")
         $("#habitacion").html(BarrioAbajo);
