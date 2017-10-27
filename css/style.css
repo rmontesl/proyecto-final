@@ -540,10 +540,12 @@ figure {
 }
 @media screen and (max-width: 480px) {
   .tabulation label {
-    width: 40%;
+    width: 100%;
   }
 }
-.tabulation input[type="text"] {
+
+
+.tabulation select {
   background: rgba(0, 0, 0, 0.05);
   border: none;
   box-shadow: none;
@@ -556,31 +558,28 @@ figure {
   border-radius: 0;
   color: #541d42 !important;
 }
-.tabulation input[type="text"]::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #541d42 !important;
-}
-.tabulation input[type="text"]::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #541d42 !important;
-}
-.tabulation input[type="text"]:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #541d42 !important;
-}
-.tabulation input[type="text"]:-moz-placeholder {
-  /* Firefox 18- */
+.tabulation input {
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  box-shadow: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
   color: #541d42 !important;
 }
 @media screen and (max-width: 480px) {
   .tabulation input[type="text"] {
-    width: 55%;
+    width: 100%;
     float: right;
   }
 }
 @media screen and (max-width: 480px) {
   .tabulation .cs-select {
-    width: 55%;
+    width: 100%;
     float: right;
   }
 }
@@ -2022,7 +2021,7 @@ div.cs-select span {
 
 /*# sourceMappingURL=style.css.map */
 
-#sel{
+.sel{
 color: #541d42 !important;
 font-weight:bold !important;
 background: transparent !important;
