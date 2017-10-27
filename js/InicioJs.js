@@ -3,7 +3,6 @@ $(document).on("ready",function(){
     language: 'es',
      minDate: new Date(),
      timepicker:"true",
-     position:'right top'
     });
 });
     "<option value='0' selected>Selecciona una opción...</option>"
