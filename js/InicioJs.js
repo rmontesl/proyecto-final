@@ -9,7 +9,6 @@ $(document).on("ready",function(){
     "<option value='0' selected>Selecciona una opción...</option>"
         
 $(document).on("change","#motel",function(){
-    debugger;
     var maracana = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option>";
     var faraon = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option><option value='Junior'>Junior</option><option value='Presidencial'>Presidencial</option><option value='Multiple'>Multiple</option>";
     var faro = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option><option value='Cabaña'>Cabaña</option><option value='Especial'>Especial</option><option value='Multiple'>Multiple</option>";
@@ -33,6 +32,8 @@ $(document).on("change","#motel",function(){
         $("#habitacion").html(faraon);
     else if(idMotel =="Maracana")
         $("#habitacion").html(maracana);
+    else
+        $("#habitacion").html("<option value='0' selected>Selecciona una opción...</option>");
 });
 
 
