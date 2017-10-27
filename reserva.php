@@ -1,7 +1,6 @@
 <?php
 $motel = $_POST['motel'];
-$fecha = $_POST['date-start'];
-$hora = $_POST['time-start'];
+$fecha = $_POST['FechayHora'];
 $decoracion = $_POST['decoracion'];
 $mail = $_POST['mail'];
 $terminos = $_POST['checkbox'];
@@ -14,7 +13,6 @@ $header .= "Content-Type: text/plain";
 $mensaje = "Este mensaje fue enviado por " . $mail . ",
 para una reserva en el motel " . $motel . " \r\n";
 $mensaje .= "Fecha: " . $fecha . " \r\n";
-$mensaje .= "Hora: " . $hora . " \r\n";
 $mensaje .= "Decoración: " . $decoracion . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
