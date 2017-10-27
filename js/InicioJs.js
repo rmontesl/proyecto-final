@@ -1,21 +1,38 @@
 $(document).on("ready",function(){
-    $('#FechayHora').datepicker({
+    $('#minMaxExample').datepicker({
     language: 'es',
      minDate: new Date(),
      timepicker:"true",
      position:'right top'
     });
 });
-
+    "<option value='0' selected>Selecciona una opción...</option>"
+        
 $(document).on("change","#motel",function(){
-    var habitacionesIbiza = "<option value='0' selected>Selecciona una opción...</option><option value='1'>Sencilla</option><option value='2'>Doble</option>"
-    var habitacionesCarpe = "<option value='0' selected>Selecciona una opción...</option><option value='3'>Habitacion 1</option><option value='4'>Suite</option>"
-    var idMotel = $("#motel option:selected").val();
+    debugger;
+    var maracana = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option>";
+    var faraon = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option><option value='Junior'>Junior</option><option value='Presidencial'>Presidencial</option><option value='Multiple'>Multiple</option>";
+    var faro = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option><option value='Cabaña'>Cabaña</option><option value='Especial'>Especial</option><option value='Multiple'>Multiple</option>";
+    var cesar = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option><option value='Suite'>Suite</option><option value='Suite de Lujo'>Suite de Lujo</option><option value='Presidencial'>Presidencial</option>"
+    var chiquinquira = "<option value='0' selected>Selecciona una opción...</option><option value='Habitación Ejecutiva'>Habitación Ejecutiva</option><option value='Cabaña Ejecutiva'>Cabaña Ejecutiva</option><option value='Cabaña Suite'>Cabaña Suite</option><option value='Suite Presidencial'>Suite Presidencial</option>"
+    var BarrioAbajo = "<option value='0' selected>Selecciona una opción...</option><option value='Cabaña Ejecutiva'>Cabaña Ejecutiva</option><option value='Cabaña Suite'>Cabaña Suite</option><option value='Suite Presidencial'>Suite Presidencial</option>"
+    var Ibiza ="<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option><option value='junior'>junior</option><option value='deluxe'>deluxe</option> <option value=' aire de mar'> aire de mar</option>"
+    var idMotel = $("#motel option:selected").text();
 
     if(idMotel == "Ibiza")
-        $("#Habitacion").html(habitacionesIbiza);
-    else if(idMotel =="Carpe")
-        $("#Habitacion").html(habitacionesCarpe);
+        $("#habitacion").html(Ibiza);
+    else if(idMotel =="Carpe Diem chiquinquira")
+        $("#habitacion").html(chiquinquira);
+    else if(idMotel =="Carpe Diem Barrio Abajo")
+        $("#habitacion").html(BarrioAbajo);
+    else if(idMotel =="Cesar's Palace")
+        $("#habitacion").html(cesar);
+    else if(idMotel =="El Faro")
+        $("#habitacion").html(faro);
+    else if(idMotel =="El Faraón")
+        $("#habitacion").html(faraon);
+    else if(idMotel =="Maracana")
+        $("#habitacion").html(maracana);
 });
 
 

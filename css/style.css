@@ -2021,3 +2021,10 @@ div.cs-select span {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#sel{
+color: #541d42 !important;
+font-weight:bold !important;
+background: transparent !important;
+}
+

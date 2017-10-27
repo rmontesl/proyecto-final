@@ -132,7 +132,8 @@
 											<form method="post">
 											<div class="col-sm-12 mt"> <section>
    <label for="motel">Elige el motel</label>
-   <select class="cs-select cs-skin-border" id="motel" name="motel" required>
+   <select class="form-control sel" id="motel">
+   <!-- <select class="cs-select cs-skin-border" id="motel" name="motel" required> -->
     <option value="0" selected>Selecciona una opción...</option>
     <option value="Ibiza">Ibiza</option> 
     <option value="Carpe diem barrio abajo" >Carpe Diem Barrio Abajo</option> 
@@ -147,9 +148,12 @@
 <br>
 <div class="col-sm-12 mt"> <section>
  <label for="motel">Elige el Habitacion</label>
- <select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required>
+ <select class="form-control sel" id="habitacion">
   <option value="0" selected>Selecciona una opción...</option>
- </select> 
+  </select>
+ <!-- <select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required> -->
+  <!-- <option value="0" selected>Selecciona una opción...</option> -->
+ <!-- </select>  -->
 </div><!--
 <div class="col-sm-12 mt"> <section>
  <label for="habitacion">Elige el Habitacion :</label>
@@ -160,7 +164,7 @@
 											<div class="col-sm-12 mt">
 												<div class="input-field">
 													<label for="date-start">Elige la fecha y la hora</label>
-													<input type='text' id="FechayHora" class=' form-control'
+													<input type='text' id="minMaxExample" class=' form-control'
        data-language='es'
        data-timepicker="true"
        data-position='right top'
@@ -171,7 +175,7 @@
 											<div class="col-sm-12 mt">
 												<section>
 													<label for="decoracion">¿Deseas decoración?</label>
-													<select class="cs-select cs-skin-border" id="decoracion" name="decoracion" required="">
+													<select class="form-control sel" id="decoracion" name="decoracion" required="">
 														<option value="0" selected>Selecciona una opción...</option>
 														<option value="Si" >Si</option>
 														<option value="No">No</option>
