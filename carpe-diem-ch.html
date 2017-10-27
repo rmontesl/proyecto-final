@@ -54,7 +54,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Date Picker -->
-	
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
@@ -74,7 +74,30 @@
 	<![endif]-->
 	<link href="dist/css/datepicker.css" rel="stylesheet">
 
+<script src="js/jquery.min.js"></script>
 
+<script src="dist/js/datepicker.js"></script>
+<script>
+	$('#minMaxExample').datepicker({
+    language: 'es',
+    minDate: new Date() // Now can select only dates, which goes after today
+})
+	var disabledDays = [0, 6];
+
+$('#disabled-days').datepicker({
+    language: 'en',
+    onRenderCell: function (date, cellType) {
+        if (cellType == 'day') {
+            var day = date.getDay(),
+                isDisabled = disabledDays.indexOf(day) != -1;
+
+            return {
+                disabled: isDisabled
+            }
+        }
+    }
+})
+</script>
 
 	</head>
 	<body>
@@ -155,11 +178,7 @@
 											<div class="col-sm-12 mt">
 												<div class="input-field">
 													<label for="date-start">Elige la fecha y la hora</label>
-													<input type='text' id="minMaxExample" class=' form-control'
-       data-language='es'
-       data-timepicker="true"
-       data-position='right top'
-       placeholder="Seleccione una opción...">
+													<input type='text' class='datepicker-here form-control' data-language='es' data-timepicker="true" data-position='right top' placeholder="Seleccione una opción...">
 												</div>
 											</div>
 											
@@ -576,9 +595,7 @@
 	
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
-	<script src="dist/js/datepicker.js"></script>
-	<script src="dist/js/i18n/datepicker.es.js"></script>	
-    <script src="js/inicioJs.js"></script>
+	<script src="dist/js/i18n/datepicker.es.js"></script>
 
 	</body>
 </html>
