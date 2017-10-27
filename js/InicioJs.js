@@ -1,5 +1,5 @@
 $(document).on("ready",function(){
-	$('#FechayHora').datepicker({
+	$('#minMaxExample').datepicker({
     language: 'es',
      minDate: new Date(),
      timepicker:"true",
