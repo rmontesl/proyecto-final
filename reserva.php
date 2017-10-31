@@ -1,14 +1,17 @@
 <?php
+if(isset($_POST['mail'])) {
+
+// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
+$email_to = "cristian.ramirez019@gmail.com";
+$email_subject = "Nueva reserva Kama";
+$email_from ="cramirez@axsistec.com";
+
 $motel = $_POST['motel'];
 $fecha = $_POST['FechayHora'];
 $decoracion = $_POST['decoracion'];
 $mail = $_POST['mail'];
 $terminos = $_POST['checkbox'];
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
 
 $mensaje = "Este mensaje fue enviado por " . $mail . ",
 para una reserva en el motel " . $motel . " \r\n";
@@ -16,14 +19,14 @@ $mensaje .= "Fecha: " . $fecha . " \r\n";
 $mensaje .= "Decoración: " . $decoracion . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'raulmonteslizcano@gmail.com';
-$asunto = 'Nueva reserva Kama';
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+// Ahora se envía el e-mail usando la función mail() de PHP
+$headers = 'From: '.$email_from."\r\n". 'Reply-To: '.$email_from."\r\n" . 'X-Mailer: PHP/' . phpversion();
+if(mail($email_to, $email_subject, $mensaje, $headers)){;
 
-echo "<fieldset>";
-	echo "<div id='success_page'>";
-	echo "<h2>¡Gracias por Utilizar Kama!</h2>";
-	echo "<p>De 30 a 40 minutos nos estaremos contactando contigo. Espera la confirmación de tu reserva y enkámate.</p>";
-	echo "</div>";
-	echo "</fieldset>";
+echo "¡El formulario se ha enviado con éxito!";}
+else{
+	echo "¡Error al evniar correo!";
+}
+}
+	?>
