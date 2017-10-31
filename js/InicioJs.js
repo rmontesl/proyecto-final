@@ -42,7 +42,8 @@ $(document).on("click","#enviarForm",function(){
       "FechayHora" : $("#FechayHora").val(),
       "decoracion" : $("#decoracion").val(),
       "mail" : $("#mail").val(),
-      "checkbox" : $("#checkbox").val()
+      "checkbox" : $("#checkbox").val(),
+	  "habitacion" : $("#habitacion").val()
       };
                 
 
