@@ -21,7 +21,7 @@
   gtag('config', 'UA-108071005-1');
 </script>
 
-  
+
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -38,7 +38,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<!-- Animate.css -->
@@ -52,22 +52,24 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Date Picker -->
-	
+
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<link href="dist/css/datepicker.css" rel="stylesheet">
-
 
 
 	</head>
@@ -83,10 +85,10 @@
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							
+
 							<li>
 								<a href="inicio.html#nosotros" class="fh5co-sub-ddown">Nosotros</a>
-								
+
 							</li>
 							<li><a href="inicio.html#moteles">Moteles</a></li>
                             <li><a href="inicio.html#promociones">Promociones</a></li>
@@ -99,7 +101,7 @@
 		</header>
 
 		<!-- end:header-top -->
-	
+
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cesar1.jpg);">
@@ -114,57 +116,65 @@
 								      <li role="presentation" class="active">
 								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">¡Reserva hoy!</a>
 								      </li>
-								      
+
 								   </ul>
 
 								   Tab panes -->
 								<div class="tab-content">
-										
+
 									<div role="tabpanel" class="tab-pane active" id="flights">
 										<div class="row">
-											<form action="reserva.php" method="post">
+											<form method="post">
 											<div class="col-sm-12 mt"> <section>
-													<label for="motel">Elige el motel</label>
-													<select class="cs-select cs-skin-border" id="motel" name="motel" required onchange="cambia_habitación()">
-														<option value="Cesar's Palace" selected>Cesar's Palace</option>
-													</select>
-												</section>
-</div>
+	 <label for="motel">Elige el motel</label>
+	 <select class="form-control  sel" id="motel">
+	 <!-- <select class="cs-select cs-skin-border" id="motel" name="motel" required> -->
+		<option value="0" selected>Selecciona una opción...</option>
+		<option value="Ibiza">Ibiza</option>
+		<option value="Carpe diem barrio abajo" >Carpe Diem Barrio Abajo</option>
+		<option value="Carpe diem Chiquinquira" >Carpe Diem Chiquinquira</option>
+		<option value="Cesar's Palace" >Cesar's Palace</option>
+		<option value="El Faro" >El Faro</option>
+		<option value="El Faraón" >El Faraón</option>
+		<option value="Maracana" >Maracana</option>
+
+	</select>
+</section>
+ </div>
 <div class="col-sm-12 mt"> <section>
-													<label for="habitacion">Elige la habitación</label>
-													<select class="cs-select cs-skin-border" id="motel" name="motel" required onchange="cambia_habitación()">
-														<option value="Sencilla" selected>Sencilla</option>
-														<option value="Suite" selected>Suite</option>
-														<option value="Suite de Lujo" selected>Suite de Lujo</option>
-														<option value="Suite Presidencial" selected>Suite Presidencial</option>
-													</select>
-												</section>
+ <label for="motel">Elige la Habitacion</label>
+ <select class="form-control" id="habitacion" name="habitacion">
+	<option value="0" selected>Selecciona una opción...</option>
+	</select>
+</section>
+ <!-- <select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required> -->
+	<!-- <option value="0" selected>Selecciona una opción...</option> -->
+ <!-- </select>  -->
 </div><!--
 <div class="col-sm-12 mt"> <section>
  <label for="habitacion">Elige el Habitacion :</label>
  <select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required>
-    <option value="0" selected>Selecciona una opción...</option>
- </select> 
+		<option value="0" selected>Selecciona una opción...</option>
+ </select>
 </div> -->
 											<div class="col-sm-12 mt">
 												<div class="input-field">
 													<label for="date-start">Elige la fecha y la hora</label>
-													<input type='text' id="minMaxExample" class=' form-control'
-       data-language='es'
-       data-timepicker="true"
-       data-position='right top'
-       placeholder="Seleccione una opción...">
+													<input type='text' id="FechayHora" class=' form-control'
+			 data-language='es'
+			 data-timepicker="true"
+			 placeholder="Seleccione una opción..." name="FechayHora">
 												</div>
 											</div>
-											
+
 											<div class="col-sm-12 mt">
 												<section>
 													<label for="decoracion">¿Deseas decoración?</label>
-													<select class="cs-select cs-skin-border" id="decoracion" name="decoracion" required="">
+													<select class="form-control sel" id="decoracion" name="decoracion" required="">
 														<option value="0" selected>Selecciona una opción...</option>
 														<option value="Si" >Si</option>
 														<option value="No">No</option>
-														
+
 													</select>
 												</section>
 											</div>
@@ -174,19 +184,20 @@
 													<input type="text" class="form-control" id="mail" name="mail" placeholder="Escribe una opción..." required="" />
 												</div>
 											</div>
-											<div class="col-sm-12 mt">
+											<div class="col-md-12 mt">
 												<div class="input-field">
-													<h5 for="checkbox" class="form-info"><input type="checkbox" id="checkbox" name="checkbox" required="">
+													<h5 for="checkbox"><input type="checkbox" id="checkbox" name="checkbox" required="" class="form-info">
 											Aceptas nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a> y <a href="tratamiento-datos.html" target="_blank">Tratamiento de datos</a></h5>
+											<h5 class="form-info">* Solo podremos enviarte el código de reserva suministrando información veridica</h5>
 												</div>
-												<h5 class="form-info">* Solo podremos enviarte el código de reserva suministrando información veridica</h5>
+
 											</div>
-											
-											
-											
-											
+
+
+
+
 											<div class="col-xs-12">
-												<button type="submit" class="btn btn-primary btn-block">Enkámate</button>
+												<button type="button" class="btn btn-primary btn-block" id="enviarForm">Enkámate</button>
 											</div>
 											</form>
 											</div>
@@ -195,17 +206,17 @@
 													<label for="habitación">Elige el tipo de habitación</label>
 													<select class="cs-select cs-skin-border" id="habitación" name="habitación">
 														<option value="-"></option>
-														
+
 													</select>
 												</section>
 											</div>-->
-											
-										
+
+
 									 </div>
 
-									 
 
-									 
+
+
 									</div>
 
 								</div>
@@ -223,23 +234,23 @@
 			</div>
 
 		</div>
-		
-		
 
-		
+
+
+
 		<div id="fh5co-contact" class="fh5co-section-white">
 			<div class="container" id="contacto">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 						<h3>Motel Cesar's Palace</h3>
-						
+
 					</div>
 				</div>
 				<form action="#">
 					<div class="row animate-box">
 						<div class="col-md-5 col-md-offset-1">
-							
-							
+
+
 							<ul class="contact-info">
 								<li><i class="icon-streetsign"></i>Carrera 38 # 80D - 106</li>
 								<li><i class="icon-key"></i>4 tipos de habitaciones</li>
@@ -262,9 +273,9 @@
 						<h3>Habitaciones</h3>
 						<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>-->
 					</div>
-					
+
 				</div>
-				
+
 		<section id="pricing-table">
             <div class="container">
                 <div class="row">
@@ -274,10 +285,10 @@
                                 <div class="pricing-header">
                                     <p class="pricing-title">Sencilla</p>
                                     <p class="pricing-rate"><sup>$</sup>32<span>000</span></p>
-                                    
+
                                 </div>
 
-                                
+
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12">
@@ -285,10 +296,10 @@
                                 <div class="pricing-header">
                                     <p class="pricing-title">Suite</p>
                                     <p class="pricing-rate"><sup>$</sup>74<span>000</span></p>
-                                    
+
                                 </div>
 
-                                
+
                             </div>
                         </div>
 
@@ -299,7 +310,7 @@
                                     <p class="pricing-rate"><sup>$</sup>95<span>000</span></p>
                                 </div>
 
-                                
+
                             </div>
                         </div>
 
@@ -308,10 +319,10 @@
                                 <div class="pricing-header">
                                     <p class="pricing-title">Presidencial</p>
                                     <p class="pricing-rate"><sup>$</sup>130<span>000</span></p>
-                                    
+
                                 </div>
 
-                                
+
                             </div>
                         </div>
 
@@ -323,7 +334,7 @@
 						<h3>Otros Moteles</h3>
 						<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>-->
 					</div>
-					
+
 				</div>
 				<div class="container"><div class="row">
 					<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
@@ -379,12 +390,12 @@
 							</div>
 						</div>
 					</div>
-					
-					
-					
-					
-					
-					
+
+
+
+
+
+
 				</div>
 			</div>
 		</div>-->
@@ -397,8 +408,8 @@
 				</div>
 			</div>
 			<div class="row">
-				
-				
+
+
 				<div class="col-md-4 col-md-offset-4">
 					<div class="box-testimony animate-box">
 						<blockquote>
@@ -407,7 +418,7 @@
 						</blockquote>
 						<p class="author">Anonimo</p>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -423,7 +434,7 @@
 					<div class="row animate-box">
 						<div class="col-md-6">
 							<h3 class="section-title">Información de contacto</h3>
-							
+
 							<ul class="contact-info">
 								<li><i class="icon-location-pin"></i>Barranquilla, Colombia</li>
 								<li><i class="icon-phone2"></i>+ 57 301 546 0909</li>
@@ -459,15 +470,15 @@
 				</form>
 			</div>
 		</div>
-		
-		
+
+
 		<footer>
 			<div id="footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
-								
+
 								<a href="#"><i class="icon-facebook2"></i></a>
 								<a href="#"><i class="icon-instagram"></i></a>
 							</p>
@@ -479,7 +490,7 @@
 			</div>
 		</footer>
 
-	
+
 
 	</div>
 	<!-- END fh5co-page -->
@@ -514,13 +525,12 @@
 	<script src="js/selectFx.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
-	
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 	<script src="dist/js/datepicker.js"></script>
-	<script src="dist/js/i18n/datepicker.es.js"></script>	
+	<script src="dist/js/i18n/datepicker.es.js"></script>
     <script src="js/inicioJs.js"></script>
 
 	</body>
 </html>
-
