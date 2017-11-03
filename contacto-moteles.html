@@ -21,7 +21,7 @@
   gtag('config', 'UA-108071005-1');
 </script>
 
-  
+
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -36,10 +36,10 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
-	
+
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -51,11 +51,11 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Date Picker -->
-	
+
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -106,10 +106,10 @@ $('#disabled-days').datepicker({
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							
+
 							<li>
 								<a href="inicio.html#nosotros" class="fh5co-sub-ddown">Nosotros</a>
-								
+
 							</li>
 							<li><a href="inicio.html#moteles">Moteles</a></li>
                             <li><a href="inicio.html#promociones">Promociones</a></li>
@@ -123,43 +123,43 @@ $('#disabled-days').datepicker({
 		<div id="fh5co-contact" class="fh5co-section-gray">
 			<div class="container" id="contacto">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box" id="formulario-motel">
 						<h3>¿Eres un motel?</h3>
 						<p>Déjanos tus datos y te contactáremos</p>
 					</div>
 				</div>
-				<form action="#">
+				<form method="post">
 					<div class="row animate-box">
 						<div class="col-md-6 col-md-offset-3">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nombre">
+										<input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nombre del motel">
+										<input type="text" class="form-control" placeholder="Nombre del motel" id="motel" name="motel" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email">
+										<input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="teléfono">
+										<input type="text" class="form-control" placeholder="teléfono" id="telefono" name="telefono" required>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mensaje" id="mensaje" name="mensaje" required></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<input type="submit" value="Enviar" class="btn btn-primary">
+										<button type="button" class="btn btn-primary btn-block" id="enviarMotel">Enviar</button>
 									</div>
 								</div>
 							</div>
@@ -169,19 +169,19 @@ $('#disabled-days').datepicker({
 			</div>
 		</div>
 
-		
-		
+
+
 		<footer>
 			<div id="footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
-								
-								<a href="#"><i class="icon-facebook2"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
+
+								<a href="https://www.facebook.com/AppKama/" target="_blank"><i class="icon-facebook2"></i></a>
+								<a href="https://www.instagram.com/kama.app/" target="_blank"><i class="icon-instagram"></i></a>
 							</p>
-							<p>Copyright 2017 Kama. Todos los derechos reservados. <br>Hecho con <i class="icon-heart3"></i> por <a href="#" target="_blank">marca</a><br>
+							<p>Copyright 2017 Kama. Todos los derechos reservados. <br>Hecho con <i class="icon-heart3"></i> por <a href="#" target="_blank">Astros</a><br>
 								Nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a></p>
 						</div>
 					</div>
@@ -189,7 +189,7 @@ $('#disabled-days').datepicker({
 			</div>
 		</footer>
 
-	
+
 
 	</div>
 	<!-- END fh5co-page -->
@@ -224,7 +224,7 @@ $('#disabled-days').datepicker({
 	<script src="js/selectFx.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
-	
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 	<script src="dist/js/i18n/datepicker.es.js"></script>
@@ -241,8 +241,7 @@ $(document).on("change","#motel",function(){
         $("#Habitacion").html(habitacionesCarpe);
 });
 </script>
-	
+
 
 	</body>
 </html>
-

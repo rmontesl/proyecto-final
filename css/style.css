@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -690,7 +690,7 @@ div.cs-select span {
 #fh5co-tours,
 #fh5co-testimonial,
 .fh5co-content-section {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-work-section,
@@ -1281,7 +1281,7 @@ div.cs-select span {
 }
 
 #fh5co-features {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 #fh5co-features .feature-left {
   margin-bottom: 40px;
@@ -1342,7 +1342,7 @@ div.cs-select span {
 #fh5co-services,
 #fh5co-about,
 #fh5co-contact {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-services,
@@ -1566,7 +1566,7 @@ div.cs-select span {
 }
 
 #fh5co-start-project-section {
-  padding: 7em 0;
+  padding: 2em 0;
   background: #F64E8B;
 }
 #fh5co-start-project-section h2 {
@@ -1909,7 +1909,7 @@ div.cs-select span {
 }
 
 .row-bottom-padded-lg {
-  padding-bottom: 7em;
+  padding-bottom: 2em;
 }
 @media screen and (max-width: 768px) {
   .row-bottom-padded-lg {
@@ -1918,7 +1918,7 @@ div.cs-select span {
 }
 
 .row-top-padded-lg {
-  padding-top: 7em;
+  padding-top: 2em;
 }
 @media screen and (max-width: 768px) {
   .row-top-padded-lg {
@@ -2026,4 +2026,9 @@ color: #541d42 !important;
 font-weight:bold !important;
 background: transparent !important;
 }
-
+#aliados {
+  margin-bottom: 0px;
+}
+.fh5co-section-white {
+  margin-bottom: : 10px;
+}

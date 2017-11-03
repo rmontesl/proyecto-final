@@ -620,7 +620,7 @@ figure {
 .tabulation{
 	width: 100%;
 	float: left;
-	margin-top: -7em;
+	margin-top: -2em;
 	background: rgba($brand-white,.95);
 	-webkit-box-shadow: 0px 43px 83px -20px rgba(0,0,0,0.41);
 	-moz-box-shadow: 0px 43px 83px -20px rgba(0,0,0,0.41);
@@ -768,7 +768,7 @@ div.cs-select{
 #fh5co-tours,
 #fh5co-testimonial,
 .fh5co-content-section {
-	padding: 7em 0;
+	padding: 2em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 4em 0;
 	}
@@ -1295,7 +1295,7 @@ div.cs-select{
 
 
 #fh5co-features {
-	padding: 7em 0;
+	padding: 2em 0;
 
 
 	.feature-left {
@@ -1346,13 +1346,13 @@ div.cs-select{
 	}
 }
 // #fh5co-feature-product {
-// 	padding: 7em 0;
+// 	padding: 2em 0;
 // }
 
 #fh5co-services, 
 #fh5co-about, 
 #fh5co-contact {
-	padding: 7em 0;
+	padding: 2em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 4em 0;
 	}
@@ -1579,7 +1579,7 @@ div.cs-select{
 }
 
 #fh5co-start-project-section{
-	padding: 7em 0;
+	padding: 2em 0;
 	background: #F64E8B;
 	h2{
 		color: rgba(255,255,255,1);
@@ -1911,13 +1911,13 @@ div.cs-select{
 }
 
 .row-bottom-padded-lg {
-	padding-bottom: 7em;
+	padding-bottom: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
 	}
 }
 .row-top-padded-lg {
-	padding-top: 7em;
+	padding-top: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-top: 2em;
 	}
