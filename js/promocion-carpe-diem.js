@@ -32,6 +32,3 @@ $(document).on("submit","#promocion-2x4",function(){
             });
             return false;
 })
-
-
-    //y asi para los demas
