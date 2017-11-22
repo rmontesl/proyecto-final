@@ -15,7 +15,7 @@ $(document).on("submit","#contacto-moteles",function(){
                 data: parametros,
                 success: function(data){
                     $("#contacto-moteles").html('');
-                    $("#contacto-moteles").html("<fieldset><div id='success_page'><h2 style='color: #541d42 !important;'>¡Gracias por Utilizar Kama!</h2><p style='color: #541d42 !important;'>De 30 a 40 minutos nos estaremos contactando contigo. Espera la confirmación de tu reserva y enkámate.</p></div></fieldset>");
+                    $("#contacto-moteles").html("<fieldset><div id='success_page'><h2 style='color: #541d42 !important;'>¡Tú mensaje ha sido!</h2><p style='color: #541d42 !important;'>Estaremos respondiendo en el menor tiempo posible,   gracias   por   contactarte   con   Kama</p></div></fieldset>");
 
                 },
                 error: function (xmlHttpRequest, textStatus, errorThrown) {

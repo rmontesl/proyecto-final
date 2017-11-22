@@ -21,7 +21,7 @@
   gtag('config', 'UA-108071005-1');
 </script>
 
-  
+
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -36,10 +36,10 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
-	
+
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -51,11 +51,11 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Date Picker -->
-	
+
 	<!-- CS Select -->
 	<link rel="stylesheet" href="css/cs-select.css">
 	<link rel="stylesheet" href="css/cs-skin-border.css">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -83,10 +83,10 @@
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							
+
 							<li>
 								<a href="inicio.html#nosotros" class="fh5co-sub-ddown">Nosotros</a>
-								
+
 							</li>
 							<li><a href="inicio.html#moteles">Moteles</a></li>
                             <li><a href="inicio.html#promociones">Promociones</a></li>
@@ -99,10 +99,10 @@
 		</header>
 
 		<!-- end:header-top -->
-	
+
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover fh5co-section-gray" data-stellar-background-ratio="0.5" ">
+			<div class="fh5co-cover fh5co-section-gray" data-stellar-background-ratio="0.5" >
 				<div class="desc">
 					<div class="container">
 						<div class="row">
@@ -114,86 +114,88 @@
 								      <li role="presentation" class="active">
 								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">¡Reserva hoy!</a>
 								      </li>
-								      
+
 								   </ul>
 
 								   Tab panes -->
-								   
+
 								<div class="tab-content">
-										
+
 									<div role="tabpanel" class="tab-pane active" id="flights">
 										<div class="row">
-											<form action="reserva.php" method="post">
-											<div class="col-sm-12 mt"> <section>
-  <label for="motel">Elige el tipo de habitación </label>
-  <select class="cs-select cs-skin-border" id="motel" name="motel" required>
-    <option value="0" selected>Selecciona una opción...</option>
-    <option value="Cabaña Ejecutiva">Cabaña Ejecutiva</option> 
-    <option value="Cabaña Suite" >Cabaña Suite</option> 
-    <option value="Suite Presidencial" >Suite Presidencial</option> 
- </select> 
-</div><!--
+											<form method="post" id="promocion-2x4">
+												<div class="col-sm-12 mt">
+													<section>
+														<label for="motel">Elige la Habitacion</label>
+														<select class="form-control" id="habitacion" name="habitacion" required>
+<option value="" selected>Selecciona una opción...</option>
+<option value="Cabaña Ejecutiva" selected>Cabaña Ejecutiva</option>
+<option value=" Cabaña Suite" selected>Cabaña Suite</option>
+<option value="Suite Presidencial" selected>Suite presidencial</option>
+</select>
+													</section>
+													<!-- <select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required> -->
+													<!-- <option value="0" selected>Selecciona una opción...</option> -->
+													<!-- </select>  -->
+												</div>
+												<!--
 <div class="col-sm-12 mt"> <section>
- <label for="habitacion">Elige el Habitacion :</label>
- <select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required>
-    <option value="0" selected>Selecciona una opción...</option>
- </select> 
+<label for="habitacion">Elige el Habitacion :</label>
+<select class="cs-select cs-skin-border" id="Habitacion" name="Habitacion" required>
+<option value="0" selected>Selecciona una opción...</option>
+</select>
 </div> -->
-											<div class="col-sm-12 mt">
-												<div class="input-field">
-													<label for="date-start">Elige la fecha y la hora</label>
-													<input type='text' id="minMaxExample" class=' form-control'
-       data-language='es'
-       data-timepicker="true"
-       data-position='right top'
-       placeholder="Seleccione una opción...">
+												<div class="col-sm-12 mt">
+													<div class="input-field">
+														<label for="date-start">Elige la fecha y la hora</label>
+														<input type='text' id="FechayHora" class=' form-control' data-language='es' data-timepicker="true" placeholder="Seleccione una opción..." name="FechayHora" required="">
+													</div>
+												</div>
+
+												<div class="col-sm-12 mt">
+													<section>
+														<label for="decoracion">¿Deseas decoración?</label>
+														<select class="form-control sel" id="decoracion" name="decoracion" required>
+												<option value="" selected>Selecciona una opción...</option>
+												<option value="Si" >Si</option>
+												<option value="No">No</option>
+
+											</select>
+													</section>
+												</div>
+												<div class="col-sm-12 mt">
+													<div class="input-field">
+														<label for="mail">Correo Electrónico o Teléfono celular</label>
+														<input type="text" class="form-control" id="mail" name="mail" placeholder="Escribe una opción..." required="" />
+													</div>
+												</div>
+												<div class="col-md-12 mt">
+													<div class="input-field">
+														<h5 for="checkbox"><input type="checkbox" id="checkbox" name="checkbox" class="form-info" required="">
+									Aceptas nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a> y <a href="tratamiento-datos.html" target="_blank">Tratamiento de datos</a></h5>
+														<h5 class="form-info">* Solo podremos enviarte el código de reserva suministrando información veridica</h5>
+													</div>
 
 												</div>
-											</div>
-											
-											<div class="col-sm-12 mt">
-												<section>
-													<label for="decoracion">¿Deseas decoración?</label>
-													<select class="cs-select cs-skin-border" id="decoracion" name="decoracion" required="">
-														<option value="0" selected>Selecciona una opción...</option>
-														<option value="Si" >Si</option>
-														<option value="No">No</option>
-														
-													</select>
-												</section>
-											</div>
-											<div class="col-sm-12 mt">
-												<div class="input-field">
-													<label for="mail">Correo Electrónico o Teléfono celular</label>
-													<input type="text" class="form-control" id="mail" name="mail" placeholder="Escribe una opción..." required="" />
+
+
+
+
+												<div class="col-xs-12">
+													<button type="submit" class="btn btn-primary btn-block" id="enviarForm">Enkámate</button>
 												</div>
-											</div>
-											<div class="col-sm-12 mt">
-												<div class="input-field">
-													<label for="checkbox"><input type="checkbox" id="checkbox" name="checkbox" required="">
-											Aceptas nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a> y <a href="tratamiento-datos.html" target="_blank">Tratamiento de datos</a></label>
-												</div>
-												<label>* Solo podremos enviarte el código de reserva suministrando información veridica</label>
-											</div>
-											
-											
-											
-											
-											<div class="col-xs-12">
-												<button type="submit" class="btn btn-primary btn-block">Enkámate</button>
-											</div>
 											</form>
 										</div>
 									 </div>
 
-									 
 
-									 
+
+
 									</div>
 
 								</div>
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
@@ -202,20 +204,20 @@
 		</div>
 
 		</div>
-		
-		
 
-		
 
-		
-		
+
+
+
+
+
 		<footer>
 			<div id="footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
-								
+
 								<a href="#"><i class="icon-facebook2"></i></a>
 								<a href="#"><i class="icon-instagram"></i></a>
 							</p>
@@ -227,7 +229,7 @@
 			</div>
 		</footer>
 
-	
+
 
 	</div>
 	<!-- END fh5co-page -->
@@ -262,14 +264,13 @@
 	<script src="js/selectFx.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
-	
+
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
 	<script src="dist/js/datepicker.js"></script>
-	<script src="dist/js/i18n/datepicker.es.js"></script>	
+	<script src="dist/js/i18n/datepicker.es.js"></script>
     <script src="js/inicioJs.js"></script>
-	
+
 
 	</body>
 </html>
-

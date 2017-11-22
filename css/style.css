@@ -925,7 +925,7 @@ div.cs-select span {
 }
 #fh5co-car .car .one-4 h3 {
   color: #fff;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 900;
   line-height: 30px;
 }
@@ -2025,4 +2025,7 @@ div.cs-select span {
 color: #541d42 !important;
 font-weight:bold !important;
 background: transparent !important;
+}
+.textarea {
+  height: 100px;
 }

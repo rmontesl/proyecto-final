@@ -328,7 +328,7 @@
 						</div>
 					</div>
 					<div class="col-md-12 text-center animate-box">
-						<p><a class="btn btn-primary btn-outline btn-lg" href="contacto-moteles.html">¿Eres un motel? ¡Contáctanos!<i class="icon-arrow-right22"></i></a></p>
+						<p><a class="btn btn-primary btn-outline btn-md" href="contacto-moteles.html">¿Eres un motel? ¡Contáctanos!<i class="icon-arrow-right22"></i></a></p>
 					</div>
 				</div>
 			</div>
@@ -346,7 +346,7 @@
 							<div class="one-4">
 								<h3>2x4</h3>
 								<span class="price"> En Carpe Diem Barrio Abajo en cualquier habitación<br><small>Solo días domingo</small></span>
-								<a class="btn btn-white btn-outline-white" href="reserva-carpe-diem.html">Reservar<i class="icon-arrow-right22"></i></a>
+								<a class="btn btn-white btn-outline-white" href="promocion-carpe-diem.html">Reservar<i class="icon-arrow-right22"></i></a>
 							</div>
 							<div class="one-1" style="background-image: url(images/carpe.jpg);">
 							</div>
@@ -387,38 +387,30 @@
 						<h3>Contacto</h3>
 					</div>
 				</div>
-				<form action="#">
+				<form method="post" id="contacto">
 					<div class="row animate-box">
-						<div class="col-md-6">
-							<h3 class="section-title">Información de contacto</h3>
-
-							<ul class="contact-info">
-								<li><i class="icon-location-pin"></i>Barranquilla, Colombia</li>
-								<li><i class="icon-phone2"></i>+ 57 301 546 0909</li>
-								<li><i class="icon-mail"></i>info@kama.com.co</li>
-								<li><i class="icon-globe2"></i>www.kama.com.co</li>
-							</ul>
-						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-md-offset-3">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nombre">
+										<input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" required>
 									</div>
 								</div>
+
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email">
+										<input type="text" class="form-control" placeholder="Email" id="mail" name="mail" required>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="form-group">
+										<input class="form-control textarea" cols="30" rows="7" placeholder="Mensaje" id="texto" name="texto" required></input>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-										<input type="submit" value="Enviar" class="btn btn-primary">
+										<input type="submit" class="btn btn-primary">
 									</div>
 								</div>
 							</div>
@@ -487,6 +479,9 @@
 	<script src="dist/js/datepicker.js"></script>
 	<script src="dist/js/i18n/datepicker.es.js"></script>
 	<script src="js/inicioJs.js"></script>
+	<script src="js/contacto.js">
+
+	</script>
 
 </body>
 
