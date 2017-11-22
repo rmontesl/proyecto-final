@@ -70,29 +70,6 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
 <script src="dist/js/datepicker.js"></script>
-<script>
-	$('#minMaxExample').datepicker({
-    language: 'es',
-    minDate: new Date() // Now can select only dates, which goes after today
-})
-	var disabledDays = [0, 6];
-
-$('#disabled-days').datepicker({
-    language: 'en',
-    onRenderCell: function (date, cellType) {
-        if (cellType == 'day') {
-            var day = date.getDay(),
-                isDisabled = disabledDays.indexOf(day) != -1;
-
-            return {
-                disabled: isDisabled
-            }
-        }
-    }
-})
-</script>
-
-
 	</head>
 	<body>
 		<div id="fh5co-wrapper">
@@ -123,28 +100,28 @@ $('#disabled-days').datepicker({
 		<div id="fh5co-contact" class="fh5co-section-gray">
 			<div class="container" id="contacto">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box" id="formulario-motel">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 						<h3>¿Eres un motel?</h3>
 						<p>Déjanos tus datos y te contactáremos</p>
 					</div>
 				</div>
-				<form method="post">
+				<form method="post" id="contacto-moteles">
 					<div class="row animate-box">
 						<div class="col-md-6 col-md-offset-3">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" required>
+										<input type="text" class="form-control" placeholder="Nombre" id="nombre" class="nombre" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nombre del motel" id="motel" name="motel" required>
+										<input type="text" class="form-control" placeholder="Nombre del motel" id="motel" class="motel" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email" id="email" name="email" required>
+										<input type="text" class="form-control" placeholder="Email" id="mail" class="mail" required>
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -154,12 +131,12 @@ $('#disabled-days').datepicker({
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mensaje" id="mensaje" name="mensaje" required></textarea>
+										<textarea class="form-control" cols="30" rows="7" placeholder="Mensaje" id="texto" name="texto" required></textarea>
 									</div>
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<button type="button" class="btn btn-primary btn-block" id="enviarMotel">Enviar</button>
+										<input type="submit" class="btn btn-primary">
 									</div>
 								</div>
 							</div>
@@ -178,10 +155,10 @@ $('#disabled-days').datepicker({
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
 
-								<a href="https://www.facebook.com/AppKama/" target="_blank"><i class="icon-facebook2"></i></a>
-								<a href="https://www.instagram.com/kama.app/" target="_blank"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
 							</p>
-							<p>Copyright 2017 Kama. Todos los derechos reservados. <br>Hecho con <i class="icon-heart3"></i> por <a href="#" target="_blank">Astro</a><br>
+							<p>Copyright 2017 Kama. Todos los derechos reservados. <br>Hecho con <i class="icon-heart3"></i> por <a href="#" target="_blank">marca</a><br>
 								Nuestros <a href="terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a></p>
 						</div>
 					</div>
@@ -227,21 +204,9 @@ $('#disabled-days').datepicker({
 
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
-	<script src="dist/js/i18n/datepicker.es.js"></script>
-	<script>
-$(document).on("change","#motel",function(){
+	<script src="js/contacto-moteles.js">
 
-    var habitacionesIbiza = "<option value='0' selected>Selecciona una opción...</option><option value='1'>Sencilla</option><option value='2'>Doble</option>"
-    var habitacionesCarpe = "<option value='0' selected>Selecciona una opción...</option><option value='3'>Habitacion 1</option><option value='4'>Suite</option>"
-    var idMotel = $("#motel option:selected").val();
-
-    if(idMotel == "Ibiza")
-        $("#Habitacion").html(habitacionesIbiza);
-    else if(idMotel =="Carpe")
-        $("#Habitacion").html(habitacionesCarpe);
-});
-</script>
-<script src="js/inicioJs.js"></script>
+	</script>
 
 
 	</body>

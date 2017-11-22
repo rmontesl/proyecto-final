@@ -5,7 +5,7 @@ $(document).on("ready",function(){
      timepicker:"true",
     });
 });
-    "<option value='0' selected>Selecciona una opción...</option>"
+    "<option value='' selected>Selecciona una opción...</option>"
 
 $(document).on("change","#motel",function(){
     var maracana = "<option value='0' selected>Selecciona una opción...</option><option value='Sencilla'>Sencilla</option>";
@@ -36,7 +36,7 @@ $(document).on("change","#motel",function(){
 });
 
 
-$(document).on("click","#enviarForm",function(){
+$(document).on("submit","#formulario",function(){
       var parametros = {
       "motel" : $("#motel").val(),
       "FechayHora" : $("#FechayHora").val(),
@@ -53,37 +53,15 @@ $(document).on("click","#enviarForm",function(){
                 data: parametros,
                 success: function(data){
                     $("#formulario").html('');
-                    $("#formulario").html("<fieldset style='background-color: transparent !important;'><div id='success_page'><h2 style='color: #ffffff !important;'>¡Gracias por Utilizar Kama!</h2><p style='color: #ffffff !important;'>De 30 a 40 minutos nos estaremos contactando contigo. Espera la confirmación de tu reserva y enkámate.</p></div></fieldset>");
+                    $("#formulario").html("<fieldset><div id='success_page'><h2 style='color: #541d42 !important;'>¡Gracias por Utilizar Kama!</h2><p style='color: #541d42 !important;'>De 30 a 40 minutos nos estaremos contactando contigo. Espera la confirmación de tu reserva y enkámate.</p></div></fieldset>");
 
                 },
                 error: function (xmlHttpRequest, textStatus, errorThrown) {
                     MensajeError(textStatus);
                 }
             });
+            return false;
 })
 
-$(document).on("click","#enviarMotel",function(){
-      var parametros = {
-      "nombre" : $("#nombre").val(),
-      "motel" : $("#motel").val(),
-      "email" : $("#email").val(),
-      "telefono" : $("#telefono").val(),
-      "mensaje" : $("#mensaje").val(),
 
-      };
-
-
-            $.ajax({
-                url: "contacto-moteles.php",
-                type: "POST",
-                data: parametros,
-                success: function(data){
-                    $("#formulario-motel").html('');
-                    $("#formulario-motel").html("<fieldset style='background-color: transparent !important;'><div id='success_page'><h2 style='color: #ffffff !important;'>¡Gracias por Utilizar Kama!</h2><p style='color: #ffffff !important;'>De 30 a 40 minutos nos estaremos contactando contigo. Espera la confirmación de tu reserva y enkámate.</p></div></fieldset>");
-
-                },
-                error: function (xmlHttpRequest, textStatus, errorThrown) {
-                    MensajeError(textStatus);
-                }
-            });
-})
+    //y asi para los demas
